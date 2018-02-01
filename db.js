@@ -5,6 +5,7 @@ const dbName = 'later.sqlite';
 const sql = `CREATE TABLE IF NOT EXISTS articles 
   (id integer primary key, title, content TEXT)`;
 
+  // Change for 0.1.1 version
 
 const initialize = () => {
   return sqlite.open(dbName)
